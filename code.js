@@ -44,7 +44,7 @@ class Exercises {
     }
     simplify(str) {
         let symbols = ["!", "#", ".", ",", "'"]
-        return str.split("").filter(c => symbols.indexOf(c) == -1).join("")
+        return str.split("").filter(c => symbols.indexOf(c) == -1).join("").toLowerCase()
     }
     validate(arr){
         if(arr.filter(b=>b===true || b===false).length>0){
@@ -62,4 +62,4 @@ class Exercises {
 module.exports=Exercises
 
 Exercis=new Exercises()
-console.log(Exercis.validate([true,false,false]))
+

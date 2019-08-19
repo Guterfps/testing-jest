@@ -64,11 +64,11 @@ test('should remove at least one element from the array `arr`',()=>{
   expect(res.length).toBeLessThan(arr.length)
 })
 
-// test("should return a clean, lowercase string without symbols",()=>{
-//   let str="ASD!."
-//   let string=Exercis.simplify([...str])
-//   expect(string).not.stringContaining(str)
-// })
+test("should return a clean, lowercase string without symbols",()=>{
+  let str="A#.,,,SD!."
+  let string=Exercis.simplify(str)
+  expect(string).not.toBe(str)
+})
 
 
 test("validate",()=>{
